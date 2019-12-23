@@ -1,0 +1,990 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第2章 TypeScript封装或实现常用容器 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-mind-maps/mindmaps.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="charpt2_list.html" />
+    
+    
+    <link rel="prev" href="charpt1_list.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第0章 本书简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    0.1 通过本书能学到什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="content.html">
+            
+                <a href="content.html">
+            
+                    
+                    0.2 本书的知识体系结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="charpt1.html">
+            
+                <a href="charpt1.html">
+            
+                    
+                    第1章 SystemJS与webpack
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="charpt1_list.html">
+            
+                <a href="charpt1_list.html">
+            
+                    
+                    1.1 目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="charpt2.html">
+            
+                <a href="charpt2.html">
+            
+                    
+                    第2章 TypeScript封装或实现常用容器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="charpt2_list.html">
+            
+                <a href="charpt2_list.html">
+            
+                    
+                    2.1 目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="charpt3.html">
+            
+                <a href="charpt3.html">
+            
+                    
+                    第3章 WebGLApplication框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="charpt3_list.html">
+            
+                <a href="charpt3_list.html">
+            
+                    
+                    3.1 目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="charpt4.html">
+            
+                <a href="charpt4.html">
+            
+                    
+                    第4章 WebGL基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="charpt4_list.html">
+            
+                <a href="charpt4_list.html">
+            
+                    
+                    4.1 目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="charpt5.html">
+            
+                <a href="charpt5.html">
+            
+                    
+                    第5章 WebGLUtilLib渲染框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="charpt5_list.html">
+            
+                <a href="charpt5_list.html">
+            
+                    
+                    5.1 目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="charpt6.html">
+            
+                <a href="charpt6.html">
+            
+                    
+                    第6章 3D图形中的数学基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="charpt6_copyright.html">
+            
+                <a href="charpt6_copyright.html">
+            
+                    
+                    6.1 TSM数学库版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="charpt6_list.html">
+            
+                <a href="charpt6_list.html">
+            
+                    
+                    6.2 目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="charpt7.html">
+            
+                <a href="charpt7.html">
+            
+                    
+                    第7章 多视口渲染基本几何体、坐标系及文字
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="charpt7_list.html">
+            
+                <a href="charpt7_list.html">
+            
+                    
+                    7.1 目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="charpt8.html">
+            
+                <a href="charpt8.html">
+            
+                    
+                    第8章 解析与渲染Quake3 BSP场景
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="charpt8_list.html">
+            
+                <a href="charpt8_list.html">
+            
+                    
+                    8.1 目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="charpt9.html">
+            
+                <a href="charpt9.html">
+            
+                    
+                    第9章 解析和渲染Doom3 PROC场景
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="charpt9_list.html">
+            
+                <a href="charpt9_list.html">
+            
+                    
+                    9.1 目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="charpt10.html">
+            
+                <a href="charpt10.html">
+            
+                    
+                    第10章 解析和渲染Doom3 MD5骨骼蒙皮动画
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="charpt10_list.html">
+            
+                <a href="charpt10_list.html">
+            
+                    
+                    10.1 目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="tga2png.html">
+            
+                <a href="tga2png.html">
+            
+                    
+                    附录1 tga2png辅助程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Doom3Tokenizer.html">
+            
+                <a href="Doom3Tokenizer.html">
+            
+                    
+                    附录2 使用TypeScript实现Doom3词法解析器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="Doom3Tokenizer1.html">
+            
+                <a href="Doom3Tokenizer1.html">
+            
+                    
+                    2.1 Token与Tokenizer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1.1" data-path="Doom3Tokenizer211.html">
+            
+                <a href="Doom3Tokenizer211.html">
+            
+                    
+                    2.1.1 Doom3文本文件格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.1.2" data-path="Doom3Tokenizer212.html">
+            
+                <a href="Doom3Tokenizer212.html">
+            
+                    
+                    2.1.2 使用IDoom3Token与IDoom3Tokenizer接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.1.3" data-path="Doom3Tokenizer213.html">
+            
+                <a href="Doom3Tokenizer213.html">
+            
+                    
+                    2.1.3 ES6中的模板字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.1.4" data-path="Doom3Tokenizer214.html">
+            
+                <a href="Doom3Tokenizer214.html">
+            
+                    
+                    2.1.4 IDoom3Token与IDoom3Tokenizer接口的定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="Doom3Tokenizer2.html">
+            
+                <a href="Doom3Tokenizer2.html">
+            
+                    
+                    2.2 IDoom3Token与IDoom3Tokenizer接口的实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.2.1" data-path="Doom3Tokenizer221.html">
+            
+                <a href="Doom3Tokenizer221.html">
+            
+                    
+                    2.2.1 Doom3Token类成员变量的声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.2" data-path="Doom3Tokenizer222.html">
+            
+                <a href="Doom3Tokenizer222.html">
+            
+                    
+                    2.2.2 Doom3Token类变量初始化的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.3" data-path="Doom3Tokenizer223.html">
+            
+                <a href="Doom3Tokenizer223.html">
+            
+                    
+                    2.2.3 IDoom3Token接口方法的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.4" data-path="Doom3Tokenizer224.html">
+            
+                <a href="Doom3Tokenizer224.html">
+            
+                    
+                    2.2.4 Doom3Token类的非接口方法实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.5" data-path="Doom3Tokenizer225.html">
+            
+                <a href="Doom3Tokenizer225.html">
+            
+                    
+                    2.2.5 Doom3Tokenzier处理数字和空白符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.6" data-path="Doom3Tokenizer226.html">
+            
+                <a href="Doom3Tokenizer226.html">
+            
+                    
+                    2.2.6 IDoom3Tokenizer接口方法实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.7" data-path="Doom3Tokenizer227.html">
+            
+                <a href="Doom3Tokenizer227.html">
+            
+                    
+                    2.2.7 Doom3Tokenizer字符处理私有方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.8" data-path="Doom3Tokenizer228.html">
+            
+                <a href="Doom3Tokenizer228.html">
+            
+                    
+                    2.2.8 核心的getNextToken方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.9" data-path="Doom3Tokenizer229.html">
+            
+                <a href="Doom3Tokenizer229.html">
+            
+                    
+                    2.2.9 跳过不需处理的空白符和注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.10" data-path="Doom3Tokenizer2210.html">
+            
+                <a href="Doom3Tokenizer2210.html">
+            
+                    
+                    2.2.10 实现_getNumber方法解析数字类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.11" data-path="Doom3Tokenizer2211.html">
+            
+                <a href="Doom3Tokenizer2211.html">
+            
+                    
+                    2.2.11 实现_getSubstring方法解析子字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.12" data-path="Doom3Tokenizer2212.html">
+            
+                <a href="Doom3Tokenizer2212.html">
+            
+                    
+                    2.2.12 实现_getString方法解析字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.13" data-path="Doom3Tokenizer2213.html">
+            
+                <a href="Doom3Tokenizer2213.html">
+            
+                    
+                    2.1.13 IDoom3Tokenizer词法解析器状态总结表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="resume.html">
+            
+                <a href="resume.html">
+            
+                    
+                    编著者简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Doom3SceneWithMD5Skeletion.html">
+            
+                <a href="Doom3SceneWithMD5Skeletion.html">
+            
+                    
+                    增补 如何在Doom3场景中运行多个MD5动画序列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="Doom3SceneWithMD5SkeletionImpl.html">
+            
+                <a href="Doom3SceneWithMD5SkeletionImpl.html">
+            
+                    
+                    增补0.1 Doom3SceneWithMD5SkeletionApplication类的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >第2章 TypeScript封装或实现常用容器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p class="mindmaps-wrapper" align="center"><svg style="height: 350px" class="mindmaps" color="true" data-content="&quot;\n# &#x5C01;&#x88C5;&#x6216;&#x5B9E;&#x73B0;&#x5E38;&#x7528;&#x5BB9;&#x5668;\n## C/C++&#x6A21;&#x62DF;\n### TS/JS ArrayBuffer&#x539F;&#x7406;\n### TS/JS DataView&#x539F;&#x7406;\n### TS/JS TypedArray&#x539F;&#x7406;\n## &#x7EBF;&#x6027;&#x5BB9;&#x5668;\n### &#x52A8;&#x6001;&#x6570;&#x7EC4;\n#### TS/JS&#x5185;&#x7F6E;&#x52A8;&#x6001;&#x6570;&#x7EC4;Array\n#### &#x5C01;&#x88C5;&#x5B9E;&#x73B0;&#x52A8;&#x6001;&#x7C7B;&#x578B;&#x6570;&#x7EC4;(TypedArrayList)\n### &#x94FE;&#x8868;\n#### &#x5355;&#x94FE;&#x8868;\n#### &#x53CC;&#x5411;&#x5FAA;&#x73AF;&#x94FE;&#x8868;\n### &#x961F;&#x5217;&#x4E0E;&#x6808;\n#### &#x5728;Array&#x4E0A;&#x5B9E;&#x73B0;\n#### &#x5728;&#x53CC;&#x5411;&#x5FAA;&#x73AF;&#x94FE;&#x8868;&#x4E0A;&#x5B9E;&#x73B0;\n## &#x5173;&#x8054;&#x5BB9;&#x5668;\n### &#x7EA2;&#x9ED1;&#x6811;\n### &#x54C8;&#x5E0C;&#x8868;\n#### TS/JS object&#x5BF9;&#x8C61;\n#### TS&#x7D22;&#x5F15;&#x7B7E;&#x540D;\n#### ES6 Map&#x5BF9;&#x8C61;\n## &#x901A;&#x7528;&#x6811;\n### &#x5185;&#x5B58;&#x4E2D;&#x7684;&#x8868;&#x793A;\n### &#x589E;&#x5220;&#x6539;&#x67E5;&#x64CD;&#x4F5C;\n### &#x904D;&#x5386;&#x64CD;&#x4F5C;\n#### &#x7EBF;&#x6027;&#x8FED;&#x4EE3;&#x5668;&#x904D;&#x5386;\n#### &#x9012;&#x5F52;&#x904D;&#x5386;\n&quot;"/>
+            </p><p align="center">&#x5E38;&#x7528;&#x5BB9;&#x5668;</p><p></p>
+
+<h2 id="&#x672C;&#x7AE0;&#x4E3B;&#x8981;&#x5173;&#x6CE8;&#x672C;&#x4E66;&#x540E;&#x7EED;&#x5C06;&#x8981;&#x7528;&#x5230;&#x7684;&#x4E00;&#x4E9B;&#x5BB9;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x5177;&#x4F53;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;">&#x672C;&#x7AE0;&#x4E3B;&#x8981;&#x5173;&#x6CE8;&#x672C;&#x4E66;&#x540E;&#x7EED;&#x5C06;&#x8981;&#x7528;&#x5230;&#x7684;&#x4E00;&#x4E9B;&#x5BB9;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x5177;&#x4F53;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</h2>
+<ul>
+<li><h3 id="&#x9996;&#x5148;&#x4E86;&#x89E3;&#x4E86;jsts&#x4E2D;&#x65B0;&#x589E;&#x7684;arraybuffer&#x3001;dataview&#x4EE5;&#x53CA;&#x7C7B;&#x578B;&#x6570;&#x7EC4;&#x76F8;&#x5173;&#x7684;&#x77E5;&#x8BC6;&#x70B9;&#xFF0C;&#x5E76;&#x4E14;&#x901A;&#x8FC7;cc&#x4EE3;&#x7801;&#x6A21;&#x62DF;&#x4E86;&#x4E0A;&#x8FF0;&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x7684;&#x5E95;&#x5C42;&#x5B9E;&#x73B0;&#x673A;&#x5236;&#x3002;">&#x9996;&#x5148;&#x4E86;&#x89E3;&#x4E86;JS/TS&#x4E2D;&#x65B0;&#x589E;&#x7684;ArrayBuffer&#x3001;DataView&#x4EE5;&#x53CA;&#x7C7B;&#x578B;&#x6570;&#x7EC4;&#x76F8;&#x5173;&#x7684;&#x77E5;&#x8BC6;&#x70B9;&#xFF0C;&#x5E76;&#x4E14;&#x901A;&#x8FC7;C/C++&#x4EE3;&#x7801;&#x6A21;&#x62DF;&#x4E86;&#x4E0A;&#x8FF0;&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x7684;&#x5E95;&#x5C42;&#x5B9E;&#x73B0;&#x673A;&#x5236;&#x3002;</h3>
+</li>
+<li><h3 id="&#x63A5;&#x7740;&#x5BF9;&#x5185;&#x7F6E;&#x7684;&#x5B9A;&#x957F;&#x7C7B;&#x578B;&#x6570;&#x7EC4;&#x8FDB;&#x884C;&#x4E86;&#x4E8C;&#x6B21;&#x5C01;&#x88C5;&#xFF0C;&#x5B9E;&#x73B0;&#x52A8;&#x6001;&#x7C7B;&#x578B;&#x6570;&#x7EC4;&#x3002;&#x7136;&#x540E;&#x5C01;&#x88C5;&#x4E86;dictionary&#x5B57;&#x5178;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x6784;&#x9020;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x6765;&#x5207;&#x6362;&#x5E95;&#x5C42;&#x662F;&#x4F7F;&#x7528;typescript&#x7D22;&#x5F15;&#x7B7E;&#x540D;&#x8FD8;&#x662F;es6-map&#x5BF9;&#x8C61;&#xFF0C;&#x4F5C;&#x4E3A;&#x77E5;&#x8BC6;&#x7684;&#x6269;&#x5C55;&#x70B9;&#xFF0C;&#x4E86;&#x89E3;&#x4E86;&#x5982;&#x4F55;&#x5224;&#x65AD;&#x5173;&#x8054;&#x5BB9;&#x5668;&#x5E95;&#x5C42;&#x662F;&#x7EA2;&#x9ED1;&#x6811;&#x5B9E;&#x73B0;&#x8FD8;&#x662F;&#x54C8;&#x5E0C;&#x8868;&#x5B9E;&#x73B0;&#x3002;">&#x63A5;&#x7740;&#x5BF9;&#x5185;&#x7F6E;&#x7684;&#x5B9A;&#x957F;&#x7C7B;&#x578B;&#x6570;&#x7EC4;&#x8FDB;&#x884C;&#x4E86;&#x4E8C;&#x6B21;&#x5C01;&#x88C5;&#xFF0C;&#x5B9E;&#x73B0;&#x52A8;&#x6001;&#x7C7B;&#x578B;&#x6570;&#x7EC4;&#x3002;&#x7136;&#x540E;&#x5C01;&#x88C5;&#x4E86;Dictionary&#x5B57;&#x5178;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x6784;&#x9020;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x6765;&#x5207;&#x6362;&#x5E95;&#x5C42;&#x662F;&#x4F7F;&#x7528;TypeScript&#x7D22;&#x5F15;&#x7B7E;&#x540D;&#x8FD8;&#x662F;ES6 Map&#x5BF9;&#x8C61;&#xFF0C;&#x4F5C;&#x4E3A;&#x77E5;&#x8BC6;&#x7684;&#x6269;&#x5C55;&#x70B9;&#xFF0C;&#x4E86;&#x89E3;&#x4E86;&#x5982;&#x4F55;&#x5224;&#x65AD;&#x5173;&#x8054;&#x5BB9;&#x5668;&#x5E95;&#x5C42;&#x662F;&#x7EA2;&#x9ED1;&#x6811;&#x5B9E;&#x73B0;&#x8FD8;&#x662F;&#x54C8;&#x5E0C;&#x8868;&#x5B9E;&#x73B0;&#x3002;</h3>
+</li>
+<li><h3 id="&#x63A5;&#x4E0B;&#x6765;&#x6F14;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x5B9E;&#x73B0;stl&#x98CE;&#x683C;&#x7684;&#x53CC;&#x5411;&#x5FAA;&#x73AF;&#x94FE;&#x8868;list&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x5BF9;&#x6BD4;&#x4E86;&#x4E0E;array&#x4E4B;&#x95F4;&#x7684;&#x533A;&#x522B;&#xFF0C;&#x5E76;&#x4E14;&#x5728;array&#x548C;list&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x5B9E;&#x73B0;&#x4E86;&#x961F;&#x5217;&#xFF08;queue&#xFF09;&#x548C;&#x6808;&#xFF08;stack&#xFF09;&#x7ED3;&#x6784;&#x3002;">&#x63A5;&#x4E0B;&#x6765;&#x6F14;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x5B9E;&#x73B0;STL&#x98CE;&#x683C;&#x7684;&#x53CC;&#x5411;&#x5FAA;&#x73AF;&#x94FE;&#x8868;List&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x5BF9;&#x6BD4;&#x4E86;&#x4E0E;Array&#x4E4B;&#x95F4;&#x7684;&#x533A;&#x522B;&#xFF0C;&#x5E76;&#x4E14;&#x5728;Array&#x548C;List&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x5B9E;&#x73B0;&#x4E86;&#x961F;&#x5217;&#xFF08;Queue&#xFF09;&#x548C;&#x6808;&#xFF08;Stack&#xFF09;&#x7ED3;&#x6784;&#x3002;</h3>
+</li>
+<li><h3 id="&#x6700;&#x540E;&#x5B9E;&#x73B0;&#x4E86;&#x901A;&#x7528;&#x7684;&#x6811;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4EE5;&#x53CA;&#x5404;&#x79CD;&#x904D;&#x5386;&#x8FED;&#x4EE3;&#x5668;&#x3002;">&#x6700;&#x540E;&#x5B9E;&#x73B0;&#x4E86;&#x901A;&#x7528;&#x7684;&#x6811;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4EE5;&#x53CA;&#x5404;&#x79CD;&#x904D;&#x5386;&#x8FED;&#x4EE3;&#x5668;&#x3002;</h3>
+</li>
+</ul>
+<footer class="page-footer"><span class="copyright">&#x968F;&#x98CE;&#x800C;&#x884C;&#x4E4B;&#x9752;&#x886B;&#x78CA;&#x843D;&#x9669;&#x5CF0;&#x884C;(www.buleifeng.top) all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x672C;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-10-08 11:41:31
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="charpt1_list.html" class="navigation navigation-prev " aria-label="Previous page: 1.1 目录">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="charpt2_list.html" class="navigation navigation-next " aria-label="Next page: 2.1 目录">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第2章 TypeScript封装或实现常用容器","level":"1.3","depth":1,"next":{"title":"2.1 目录","level":"1.3.1","depth":2,"path":"charpt2_list.md","ref":"./charpt2_list.md","articles":[]},"previous":{"title":"1.1 目录","level":"1.2.1","depth":2,"path":"charpt1_list.md","ref":"./charpt1_list.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mind-maps","splitter","local-video","expandable-chapters-small","tbfed-pagefooter","emphasize","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"随风而行之青衫磊落险峰行(www.buleifeng.top)","modify_label":"本文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"mind-maps":{},"highlight":{},"expandable-chapters-small":{},"local-video":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"charpt2.md","mtime":"2019-10-08T03:41:31.192Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-23T11:47:45.616Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-mind-maps/mindmaps.dist.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
